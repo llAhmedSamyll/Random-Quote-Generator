@@ -27,7 +27,7 @@ body {
 }
 
 .container {
-  max-width: 80%;
+  max-width: 90%;
 }
 
 .container > span {
@@ -51,11 +51,13 @@ body {
 }
 .quote-content P:first-of-type {
   display: inline;
-  font-size: 2.1875rem;
+  font-size: ;
+  font-size: clamp(1.5rem, 5vw, 2.2rem);
+
 }
 #quote-text {
   display: inline;
-  font-size: 2.1875rem;
+  font-size: clamp(1.5rem, 5vw, 2.2rem);
   color: #b50000fe;
   font-weight: 500;
   font-family: "BeautifulPeople", Times, serif;
@@ -98,9 +100,3 @@ body {
   background-size: 100% 100%;
 }
 
-@media (max-width: 480px) {
-  #quote-text,
-  .quote-content P:first-of-type {
-    font-size: 1.5rem;
-  }
-}
