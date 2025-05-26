@@ -101,6 +101,6 @@ body {
 @media (max-width: 480px) {
   #quote-text,
   .quote-content P:first-of-type {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
   }
 }
