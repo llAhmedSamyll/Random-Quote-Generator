@@ -1,0 +1,106 @@
+@font-face {
+  font-family: BeautifulPeople;
+  src: url(fonts/BeautifulPeoplePersonalUse-dE0g.ttf);
+}
+@font-face {
+  font-family: Olibrick;
+  src: url(fonts/Olibrick-1jn00.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-image: url(image/background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.container {
+  max-width: 80%;
+}
+
+.container > span {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #2a1b00;
+  text-shadow: 2px 2px #7244006b;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-family: Olibrick, sans-serif;
+  letter-spacing: 5px;
+}
+
+.quote-content {
+  width: 100%;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.quote-content P:first-of-type {
+  display: inline;
+  font-size: 2.1875rem;
+}
+#quote-text {
+  display: inline;
+  font-size: 2.1875rem;
+  color: #b50000fe;
+  font-weight: 500;
+  font-family: "BeautifulPeople", Times, serif;
+  letter-spacing: 3px;
+  margin-bottom: 25px;
+}
+
+#quote-author {
+  padding-top: 40px;
+  font-size: 1.3rem;
+  color: #2a1b00;
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#new-quote-btn {
+  background: transparent;
+  color: #2a1b00;
+  box-shadow: 2px 2px #7244006b;
+  padding: 12px 25px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.2s ease;
+  margin: 0 auto;
+  background-image: linear-gradient(to right, #ff8d0082 0%, #ff8d0082 100%);
+  background-size: 0% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#new-quote-btn:hover {
+  background-size: 100% 100%;
+}
+
+@media (max-width: 480px) {
+  #quote-text,
+  .quote-content P:first-of-type {
+    font-size: 1.1rem;
+  }
+}
